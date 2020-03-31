@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>EzTool-宜立資訊</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
   </head>
   <body>
-    <div id="App">
-      <div v-for="i in 3">
-        <a href="./Post/2020-03-29_FirstPost">FirstPost</a>
-      </div>
+    <div id="app">
+      <a href="./Post/Web/2020-03-30_9999_000-開發環境">FirstPost</a>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
   </body>
+  <script>
+    var app = new Vue({ el: "#app" });
+  </script>
 </html>
