@@ -52,7 +52,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "template"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
