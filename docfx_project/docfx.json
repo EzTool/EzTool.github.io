@@ -23,8 +23,16 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "articles_TECH/**.md",
+          "articles_TECH/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
+          "articles_account/**.md",
+          "articles_account/**/toc.yml",
           "toc.yml",
           "*.md"
         ]

@@ -1,8 +1,92 @@
 {
   "homepages": [],
-  "source_base_path": "C:/_TOHU/_Blog/EzTool.github.io/docfx_project",
+  "source_base_path": "c:/_TOHU/_Blog/EzTool.github.io/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_ACCOUNT/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_ACCOUNT/index.html",
+          "hash": "jFgz6sdt4dcqMH3HUsjqpA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Articles_ACCOUNT/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_ACCOUNT/toc.html",
+          "hash": "09r/CIwHapJHDETTENqmYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/9998_001.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/9998_001.html",
+          "hash": "kEWrrRhbQYxtb6Xn754EWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/9999_000-開發環境.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/9999_000-開發環境.html",
+          "hash": "MTkRRP+drD5zb0X9nB2edw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/DocFX/999_快速開始.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/DocFX/999_快速開始.html",
+          "hash": "/61Ni4K2cdjhiLZYP9hyfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/index.html",
+          "hash": "TI4JLnE3F3nKMhV6bTSjuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Articles_TECH/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/toc.html",
+          "hash": "AqYuNGJ5wzNhtCeeKSWD0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
@@ -29,42 +113,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/9998_001.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/9998_001.html",
-          "hash": "YnggM7MQeafyT88r4kATQg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/9999_000-開發環境.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/9999_000-開發環境.html",
-          "hash": "hiKcFE0dgG3OvLmB+5kw/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "6IGdkvfhJeBP3uOBePUmjQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
@@ -72,16 +120,19 @@
           "hash": "dWKkbI/cVP1out+aqAvukg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "kfIfFxRH9kmtvEcExc38Fg=="
+          "hash": "duC5081OjJJvRQ179Qd0+g=="
         }
       },
       "is_incremental": false,
@@ -100,8 +151,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
+          "total_file_count": 7,
+          "skipped_file_count": 6
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

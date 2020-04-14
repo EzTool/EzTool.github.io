@@ -1,5 +1,8 @@
-- name: Articles
-  href: articles/
+- name: 技術文章
+  href: Articles_TECH
+  homepage: Articles_TECH/index.md
+- name: 會計專業
+  href: Articles_ACCOUNT
 - name: Api Documentation
   href: api/
   homepage: api/index.md
