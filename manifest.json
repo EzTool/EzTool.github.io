@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/_TOHU/_Blog/EzTool.github.io/docfx_project",
+  "source_base_path": "C:/_TOHU/_Blog/EzTool.github.io/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_ACCOUNT/index.html",
-          "hash": "jFgz6sdt4dcqMH3HUsjqpA=="
+          "hash": "z494C7RhOcwUVNjVU6bIPw=="
         }
       },
       "is_incremental": true,
@@ -25,6 +25,30 @@
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/202004/202004_001_側錄StoredProcedure呼叫.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/202004/202004_001_側錄StoredProcedure呼叫.html",
+          "hash": "v46jDLnaxh2fZejasotMYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/202004/202004_002_學習能力.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/202004/202004_002_學習能力.html",
+          "hash": "bLHhzK4t5TPFqUIqUf/pog=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -65,6 +89,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/System/999_001.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/System/999_001.html",
+          "hash": "8n+lvq+7NgKJHnPFYYHLpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Articles_TECH/index.md",
       "output": {
         ".html": {
@@ -72,7 +108,7 @@
           "hash": "TI4JLnE3F3nKMhV6bTSjuA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,31 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "AqYuNGJ5wzNhtCeeKSWD0Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html",
-          "hash": "/xZhYB6pnmO+felXjaYUng=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "H5frWk4fYGIWHpFNp3BdfA=="
+          "hash": "x6nV+F1Ud7kBYe+nVisHYg=="
         }
       },
       "is_incremental": false,
@@ -120,7 +132,7 @@
           "hash": "dWKkbI/cVP1out+aqAvukg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +144,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "duC5081OjJJvRQ179Qd0+g=="
+          "hash": "1FVpewKRqTc9i/9Jmi36/g=="
         }
       },
       "is_incremental": false,
@@ -151,8 +163,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 6
+          "total_file_count": 9,
+          "skipped_file_count": 8
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
