@@ -7,7 +7,9 @@
     - name: DocFX-快速開始
       href: DocFX\999_快速開始.md
 - name: 技術文章
-  items:    
+  items:      
+    - name: 從 WPF 到 Vue.js
+      href: 202004\202004_003_WPF2Vue.md
     - name: 隨手記
       href: 9998_001.md
 - name: 開發環境

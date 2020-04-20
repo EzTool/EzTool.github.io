@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#24478; WPF &#21040; Vue.js </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#24478; WPF &#21040; Vue.js ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="從-wpf-到-vuejs">從 WPF 到 Vue.js</h1>
+
+<p>WPF 是微軟提出的桌面應用前端方案，而 Vue.js 則是網頁的前端框架，兩者看來不相關，但其實兩者的特色都是採用 MVVM 架構發展，並且將「繫結」加以封裝，提供使用能夠專注於邏輯的撰寫。</p>
+<h2 id="mvvm-架構">MVVM 架構</h2>
+<p>畫面的變化一般是透過對控制項的調整進行，在 WPF 中是透過控制項而 Web 中則是對 DOM 物件，而 MVVM 架構的核心即是將畫面的變化轉換為資料的變化，然後將資料影響控制項的邏輯封將到「繫結」過程。</p>
+<p>如此一來，對於開發者可以專注於資料邏輯的撰寫，同時也有利於單元測試的撰寫，由原本對操作介面的整合測試降解為對資料處理邏輯的單元測試。</p>
+<ul>
+<li>View : 規範畫面顯示。</li>
+<li>Model : 資料模型。</li>
+<li>ViewModel : 資料異動邏輯。</li>
+</ul>
+<h2 id="實踐情形">實踐情形</h2>
+<p>兩者都是採用 MVVM 架構，下表列示兩個框架對應 MVVM 的三個不同角色，前端畫面在 View 角色在 WPF 中是透過 XAML 格式定義的檔案決定，而在 Vue.js 中則是由 HTML 格式定義決定。</p>
+<table>
+<thead>
+<tr>
+<th>MVVM</th>
+<th>WPF</th>
+<th>Vue.js</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View</td>
+<td>XAML</td>
+<td>Template</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>DataContext</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>ViewModel</td>
+<td>ICommand</td>
+<td>Method</td>
+</tr>
+</tbody>
+</table>
+<h2 id="繫結引擎">繫結引擎</h2>
+<h3 id="繫結方向">繫結方向</h3>
+<table>
+<thead>
+<tr>
+<th>繫結方向</th>
+<th>WPF</th>
+<th>Vue.js(2.0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>雙向繫結 ( View &lt;-&gt; Model )</td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>單次繫結 ( Model -&gt; View )</td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>單向繫結 ( Model -&gt; View )</td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>單向繫結 ( View -&gt; Model )</td>
+<td>V</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>在 <a href="https://docs.microsoft.com/zh-tw/dotnet/framework/wpf/data/how-to-specify-the-direction-of-the-binding">[MSDN]如何：指定繫結的方向</a> 一文中說明了 WPF 的資料繫結方向，同時可以在 <a href="https://docs.microsoft.com/zh-tw/dotnet/api/system.windows.data.bindingmode?view=netframework-4.8">BindingMode 列舉</a> 中知道，目前 WPF 提供 <strong>OneTime、OneWay、OnwWayToSource 及 TwoWay</strong> 四種不同的繫結方向。</p>
+<h3 id="繫結來源">繫結來源</h3>
+<table>
+<thead>
+<tr>
+<th>View 繫結來源</th>
+<th>WPF</th>
+<th>Vue.js</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>Other Element</td>
+<td>V</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h2 id="後記">後記</h2>
+<p>Vue.js 提供前端資料與控制項的繫結引擎，這點就跟 WPF 的繫結引擎一致，都是將資料與控制項的操作加以封裝，讓撰寫程式可以專注於資料處理邏輯。</p>
+<h1 id="延伸閱讀">延伸閱讀</h1>
+<ul>
+<li><a href="http://blog.sanc.idv.tw/2011/12/wpf-mvvm.html">[天空的垃圾場]WPF-MVVM(一)</a></li>
+<li><a href="http://blog.sanc.idv.tw/2011/12/wpf-mvvm_29.html">[天空的垃圾場]WPF-MVVM(二)</a></li>
+<li><a href="http://blog.sanc.idv.tw/2011/12/wpf-mvvm_31.html">[天空的垃圾場]WPF-MVVM(三)</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/EzTool/EzTool.github.io/blob/master/docfx_project/Articles_TECH/202004/202004_003_WPF2Vue.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>宜立資訊 - EzInfo</span><br>
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
