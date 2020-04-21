@@ -12,7 +12,7 @@
           "hash": "/JqlwMamxCUDDAgkfyK2Eg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/9998_001.html",
-          "hash": "8HfJTz+Czvwjuz27rp1axw=="
+          "hash": "s4IR5SL+IPE8OIfTrmaB2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
