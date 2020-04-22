@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/_TOHU/Blog/EzTool.github.io/docfx_project",
+  "source_base_path": "C:/_TOHU/_Blog/EzTool.github.io/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_ACCOUNT/index.html",
-          "hash": "/JqlwMamxCUDDAgkfyK2Eg=="
+          "hash": "c4Ps2uvEfgJ+ctiEK/bLzw=="
         }
       },
       "is_incremental": true,
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/202004/202004_001_側錄StoredProcedure呼叫.html",
-          "hash": "T15cFsILe9rs3zKywuZxyA=="
+          "hash": "v46jDLnaxh2fZejasotMYQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/202004/202004_002_學習能力.html",
-          "hash": "yk/O0dyMuF6Fmytb3pYl+Q=="
+          "hash": "bLHhzK4t5TPFqUIqUf/pog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/202004/202004_003_WPF2Vue.html",
-          "hash": "ehNxoa0eMM+wAM6VIO3DjA=="
+          "hash": "OoPXpGR3fibhnPNpG6XklQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/9998_001.html",
-          "hash": "s4IR5SL+IPE8OIfTrmaB2w=="
+          "hash": "WaL2hMkbSX8GzY/8sqg7CA=="
         }
       },
       "is_incremental": false,
@@ -81,22 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/9999_000-開發環境.html",
-          "hash": "w8tllabggz+5ncLYLe34fQ=="
+          "hash": "MzzqXGpCfaWKLIxLZDVZYw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Articles_TECH/DocFX/999_快速開始.md",
-      "output": {
-        ".html": {
-          "relative_path": "Articles_TECH/DocFX/999_快速開始.html",
-          "hash": "4+lvK1DhoJaYH8gvk9PY8A=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +93,46 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/System/999_001.html",
-          "hash": "6stt4CTC8G32ubKJFHCs4Q=="
+          "hash": "NbmqwkXY8Mp/HA2PYheV7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/DocFX/999_快速開始.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/DocFX/999_快速開始.html",
+          "hash": "vl4TZmRfJ0tMXhNakVi4LA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/VSCode/Extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/VSCode/Extension.html",
+          "hash": "wwEmhitgrqZJuVThw6QYdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/VSCode/_index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/VSCode/_index.html",
+          "hash": "/aJRek2itAV39mxRH4nn+A=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/index.html",
-          "hash": "lHMMwBnGlturtmU47gOmOg=="
+          "hash": "TI4JLnE3F3nKMhV6bTSjuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "h6FsLm1uYeUfxVgY0V0Hpw=="
+          "hash": "BMpNGi5hU9VX1YsUoek8/A=="
         }
       },
       "is_incremental": false,
@@ -141,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "43qvv3JQGwv+wRe8KgAIhw=="
+          "hash": "dWKkbI/cVP1out+aqAvukg=="
         }
       },
       "is_incremental": true,
@@ -175,8 +199,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 9
+          "total_file_count": 12,
+          "skipped_file_count": 11
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
