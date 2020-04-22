@@ -125,11 +125,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Articles_TECH/Tools/VSCode/_index.md",
+      "source_relative_path": "Articles_TECH/Tools/VSCode/index.md",
       "output": {
         ".html": {
-          "relative_path": "Articles_TECH/Tools/VSCode/_index.html",
-          "hash": "/aJRek2itAV39mxRH4nn+A=="
+          "relative_path": "Articles_TECH/Tools/VSCode/index.html",
+          "hash": "fe7YiMcWH/SVnHsXEDlXQw=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "BMpNGi5hU9VX1YsUoek8/A=="
+          "hash": "CeGSkYXdfPeRpoxgxI3ZEg=="
         }
       },
       "is_incremental": false,
@@ -200,7 +200,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 12,
-          "skipped_file_count": 12
+          "skipped_file_count": 11
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

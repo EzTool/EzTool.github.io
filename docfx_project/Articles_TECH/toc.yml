@@ -7,7 +7,7 @@
 - name: 工具箱
   items:
     - name: Visual Studio SCode
-      homepage: Tools\VSCode\_index.md      
+      homepage: Tools\VSCode\index.md      
       items:
         - name: 常用擴展
           href: Tools\VSCode\Extension.md
