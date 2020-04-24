@@ -36,7 +36,7 @@
           "hash": "v46jDLnaxh2fZejasotMYQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "bLHhzK4t5TPFqUIqUf/pog=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "OoPXpGR3fibhnPNpG6XklQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -70,18 +70,6 @@
         ".html": {
           "relative_path": "Articles_TECH/9998_001.html",
           "hash": "WaL2hMkbSX8GzY/8sqg7CA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Articles_TECH/9999_000-開發環境.md",
-      "output": {
-        ".html": {
-          "relative_path": "Articles_TECH/9999_000-開發環境.html",
-          "hash": "P6V7qfxl76JsePfz8cRR1Q=="
         }
       },
       "is_incremental": false,
@@ -96,7 +84,7 @@
           "hash": "NbmqwkXY8Mp/HA2PYheV7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +96,7 @@
           "hash": "vl4TZmRfJ0tMXhNakVi4LA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -120,7 +108,7 @@
           "hash": "wwEmhitgrqZJuVThw6QYdA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +120,31 @@
           "hash": "fe7YiMcWH/SVnHsXEDlXQw=="
         }
       },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/VersionControl.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/VersionControl.html",
+          "hash": "QTRMXtJ2FNR0KR1wUwloMA=="
+        }
+      },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/VisualStudio/Extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/VisualStudio/Extension.html",
+          "hash": "m0M4lccjgCV47CUw0B+WLA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -144,7 +156,7 @@
           "hash": "TI4JLnE3F3nKMhV6bTSjuA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "CeGSkYXdfPeRpoxgxI3ZEg=="
+          "hash": "nValv2fu3UNgNN8FENmHFQ=="
         }
       },
       "is_incremental": false,
@@ -199,8 +211,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 12,
-          "skipped_file_count": 11
+          "total_file_count": 13,
+          "skipped_file_count": 13
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

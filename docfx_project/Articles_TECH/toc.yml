@@ -2,18 +2,24 @@
   items:
     - name: 001-需求的條件
       href: System\999_001.md
-- name: 開發環境
-  href: 9999_000-開發環境.md
 - name: 工具箱
   items:
+    - name: Visual Studio
+      items:
+        - name: 常用擴展
+          href: Tools\VisualStudio\Extension.md
     - name: Visual Studio SCode
       homepage: Tools\VSCode\index.md      
       items:
         - name: 常用擴展
           href: Tools\VSCode\Extension.md
-    - name: DocFX-快速開始
-      href: Tools\DocFX\999_快速開始.md
-    
+    - name: DocFX        
+      homepage: Tools\DocFX\999_快速開始.md
+      items:
+          - name: 快速開始
+            href: Tools\DocFX\999_快速開始.md
+    - name: 版本管理
+      href: Tools\VersionControl.md
 - name: 技術文章
   items:      
     - name: 從 WPF 到 Vue.js
