@@ -36,7 +36,7 @@
           "hash": "v46jDLnaxh2fZejasotMYQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "bLHhzK4t5TPFqUIqUf/pog=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "OoPXpGR3fibhnPNpG6XklQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "WaL2hMkbSX8GzY/8sqg7CA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "NbmqwkXY8Mp/HA2PYheV7w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -94,6 +94,18 @@
         ".html": {
           "relative_path": "Articles_TECH/Tools/DocFX/999_快速開始.html",
           "hash": "vl4TZmRfJ0tMXhNakVi4LA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/TestTools.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/TestTools.html",
+          "hash": "QMEvWdHgFf5awI+KzIRhig=="
         }
       },
       "is_incremental": false,
@@ -108,7 +120,7 @@
           "hash": "wwEmhitgrqZJuVThw6QYdA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +132,7 @@
           "hash": "fe7YiMcWH/SVnHsXEDlXQw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +156,7 @@
           "hash": "m0M4lccjgCV47CUw0B+WLA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +168,7 @@
           "hash": "TI4JLnE3F3nKMhV6bTSjuA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "nValv2fu3UNgNN8FENmHFQ=="
+          "hash": "a1dLj04mjds+GY2CWbj8RQ=="
         }
       },
       "is_incremental": false,
@@ -211,7 +223,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 14,
           "skipped_file_count": 13
         },
         "TocDocumentProcessor": {

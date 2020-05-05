@@ -30,6 +30,8 @@ Jest 使用 Webpack -> babel
 ## 前端框架
 
 ### Vuejs
+* [剖析Vue原理&实现双向绑定MVVM](https://segmentfault.com/a/1190000006599500)
+* 安裝  @vue/cli-plugin-unit-jest 時會安裝 SnoreToast <-- Windows 通知軟體。
 ### Reactjs
 ### Angular
 
