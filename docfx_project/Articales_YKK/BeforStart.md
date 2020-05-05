@@ -24,9 +24,6 @@ Jest 使用 Webpack -> babel
 ## 商業邏輯測試
 * Jest 
 
-
-
-
 ## 前端框架
 
 ### Vuejs
