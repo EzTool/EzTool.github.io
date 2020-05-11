@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JMeter </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="JMeter ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="jmeter">JMeter</h1>
+
+<p>JMeter 是開源軟體 Apache 基金會下的一個負載測試工具，用來測試部署在伺服器端的應用程式的效能。</p>
+<p>什麼是負載測試？舉個例子，你開了一個網路商店，興沖沖地準備雙十一大幹一把，沒想當天活動的時候大量用戶一訪問你的網店，你的網店就掛了，那怎麼辦？辦法就是在實際搞活動之前，先測試一下以確認系統能承受那麼多少用戶，當然測試的時候我們不需要請真正的這麼多實際用戶，否則得花多少錢啊！</p>
+<p>JMeter 能夠模擬大量用戶訪問的軟體，而且它是開源的，不花錢！</p>
+<h2 id="安裝">安裝</h2>
+<ul>
+<li><p>下載
+可以在 <a href="https://jmeter.apache.org/">JMeter 官方網站</a> ( 如下圖 ) 後，再切換到 <strong><a href="https://jmeter.apache.org/download_jmeter.cgi">Download Releases</a></strong> 頁面下載。</p>
+<p><img src="../../images/20200511-JMeterStart/Image001.png" alt="JMeter"></p>
+</li>
+<li><p>下載 .zip 檔案。
+<img src="../../images/20200511-JMeterStart/Image002.png" alt="JMeter Download"></p>
+</li>
+<li><p>解壓縮後執行 <strong>bin\jmeter.bat</strong> 批次檔就可以開啟 JMeter 的圖形介面
+<img src="../../images/20200511-JMeterStart/Image003.png" alt="JMeter Run Bat File"></p>
+</li>
+<li><p>JMeter 的圖形介面
+<img src="../../images/20200511-JMeterStart/Image004.png" alt="JMeter Run Bat File"></p>
+</li>
+</ul>
+<h3 id="未能正常開啟-jmeter-圖形介面">未能正常開啟 JMeter 圖形介面</h3>
+<p>執行 <strong>jmeter.bat</strong> 後若未開啟 JMeter 的圖形介面，並且出現以下訊息:</p>
+<pre><code>Not able to find Java executable or version. Please check your Java Installation.
+</code></pre>
+<p>這是因為 JMeter 是由 JAVA 撰寫開發，所以安裝 <strong>JDK</strong> 到電腦，可以自行到 <strong>ORACLE</strong> 下載安裝包。</p>
+<h2 id="開始使用">開始使用</h2>
+<h3 id="主要概念">主要概念</h3>
+<ul>
+<li><p><strong>測試計畫 ( Test Plan ):</strong><br>
+所有的測試工作都基於測試計劃進行，個別專案中僅能具備單一測試計畫，也就是做為專案的全局設置。</p>
+</li>
+<li><p><strong>執行緒組合 ( Threads(Users)\Thread Group ):</strong><br>
+相當於許多執行緒的組合，在個別專案中有多個執行緒組合，對特定標的進行測試的各種不同呼叫的執行緒集合的概念，例如待測網站 A 及 網站 B 時，應建立兩個不同執行緒組合。</p>
+</li>
+<li><p><strong>HTTP 要求 ( Sampler\HTTP Request ):</strong><br>
+HTTP 要求的原理是通過建立多條 HTTP 要求，從而達到測試網站負載及效能的作用，最常見的即是 HTTP 要求這類，其他還有資料庫測試、FTP 測試等。</p>
+</li>
+</ul>
+<h3 id="1-新增-thread-group">1. 新增 Thread Group</h3>
+<p><img src="../../images/20200511-JMeterStart/Image101.png" alt="Add Thread Group"></p>
+<ul>
+<li>設定測試數量<br>
+每次測試的數量，是透過 <strong>執行緒數量 Number of Threads(users)</strong> 及 <strong>循環數量 Loop Count</strong> 的乘數。
+<img src="../../images/20200511-JMeterStart/Image103.png" alt="Run Times"></li>
+</ul>
+<h3 id="2-新增-http-request">2. 新增 HTTP Request</h3>
+<p><img src="../../images/20200511-JMeterStart/Image102.png" alt="Add Thread Group"></p>
+<ul>
+<li>設定 HTTP Request
+<img src="../../images/20200511-JMeterStart/Image104.png" alt="Add Thread Group"></li>
+</ul>
+<p>完整設定可以參考 <a href="http://svn.apache.org/repos/asf/jmeter/tags/v2_8/docs/usermanual/component_reference.html#HTTP_Request">使用手冊的 18.1.2 HTTP Request</a> 的說明，簡單說明必要的參數如下：</p>
+<ul>
+<li>Basic
+<ul>
+<li>Web Server
+<ul>
+<li><strong>Proptocol[http]:</strong> 可以填入到 <strong>HTTP</strong> 及 <strong>HTTPS</strong> 兩種不同的協議。</li>
+<li><strong>Server Name or IP:</strong> 網頁的伺服器名稱或是 IP 位址。</li>
+<li><strong>Port Number:</strong> 埠號，預設 HTTP/HTTPS 的 80 埠號，可以設定自訂的不同埠號。</li>
+</ul>
+</li>
+<li>HTTP Request
+<ul>
+<li><strong>Method:</strong> 各個不同呼叫模式，例如 Get, Post 方法。</li>
+<li><strong>Path:</strong> 路徑，待測試的網址路徑。</li>
+<li><strong>Redirect Automatically:</strong> 勾選後，在網頁轉址時，將轉址與原請求視窗同一請求。</li>
+<li><strong>Follow Redirects:</strong> 勾選後，在網頁轉址時，將轉址視為個別不同請求。</li>
+<li><strong>Use KeepAlive:</strong> 設定 HTTP 呼叫的 Keep-Alive 設定。</li>
+</ul>
+</li>
+<li><strong>Parameters:</strong> 提供設定網頁後綴參數。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-新增監聽器">3. 新增監聽器</h3>
+<p>執行測試後，如何收集測試結果，可以透過監聽器在執行過進行結果收集，以下列示兩種不同的監聽器，分別以樹狀結構及列表形式表示測試結果。</p>
+<ul>
+<li>View Results Tree
+<img src="../../images/20200511-JMeterStart/Image105.png" alt="Add Thread Group"></li>
+<li>View Results in Table
+<img src="../../images/20200511-JMeterStart/Image106.png" alt="Add Thread Group"></li>
+</ul>
+<h2 id="參考文件">參考文件</h2>
+<ul>
+<li><a href="https://jmeter.apache.org/usermanual/index.html">官方使用手冊</a></li>
+<li><a href="https://www.cnblogs.com/st-leslie/p/5185376.html">Jmeter 使用指南</a></li>
+<li><a href="https://www.itread01.com/content/1541152143.html">JMeter multipart/form-data 請求自定義 body data 簡述</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/EzTool/EzTool.github.io/blob/master/docfx_project/Articles_TECH/Tools/JMeter_Start.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>宜立資訊 - EzInfo</span><br>
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

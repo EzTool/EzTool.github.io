@@ -101,6 +101,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Articles_TECH/Tools/JMeter_Start.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_TECH/Tools/JMeter_Start.html",
+          "hash": "l6oIplEnVyjSzraT4Of30Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Articles_TECH/Tools/TestTools.md",
       "output": {
         ".html": {
@@ -108,7 +120,7 @@
           "hash": "QMEvWdHgFf5awI+KzIRhig=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,7 +189,128 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/toc.html",
-          "hash": "a1dLj04mjds+GY2CWbj8RQ=="
+          "hash": "tM47A+a14e5dYT9hbaK1uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image001.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image002.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image002.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image003.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image003.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image004.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image004.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image005.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image005.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image101.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image101.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image102.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image102.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image103.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image103.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image104.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image104.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image105.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image105.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image106.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image106.png"
         }
       },
       "is_incremental": false,
@@ -223,8 +356,15 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 14,
-          "skipped_file_count": 13
+          "total_file_count": 15,
+          "skipped_file_count": 14
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
