@@ -6,6 +6,8 @@ JMeter 是開源軟體 Apache 基金會下的一個負載測試工具，用來�
 JMeter 能夠模擬大量用戶訪問的軟體，而且它是開源的，不花錢！
 
 ## 安裝
+JMeter 的安裝非常簡單，從[JMeter 官方網站][JMeter] 下載壓縮檔後解壓即可使用。
+
 * 下載
 可以在 [JMeter 官方網站][JMeter] ( 如下圖 ) 後，再切換到 **[Download Releases][Ref001]** 頁面下載。
 
@@ -28,15 +30,28 @@ JMeter 能夠模擬大量用戶訪問的軟體，而且它是開源的，不花�
 這是因為 JMeter 是由 JAVA 撰寫開發，所以安裝 **JDK** 到電腦，可以自行到 **ORACLE** 下載安裝包。
 
 ## 開始使用
-### 主要概念
+### 主要元件
 * **測試計畫 ( Test Plan ):**  
-所有的測試工作都基於測試計劃進行，個別專案中僅能具備單一測試計畫，也就是做為專案的全局設置。
+所有的測試工作都基於測試計劃進行，個別專案中僅能具備單一測試計畫，也是其他 JMeter 元件的最上層容器。
 
 * **執行緒組合 ( Threads(Users)\Thread Group ):**  
-相當於許多執行緒的組合，在個別專案中有多個執行緒組合，對特定標的進行測試的各種不同呼叫的執行緒集合的概念，例如待測網站 A 及 網站 B 時，應建立兩個不同執行緒組合。
+相當於許多執行緒的組合，在個別專案中有多個執行緒組合，對特定標的進行測試的各種不同呼叫的執行緒集合的概念，例如待測網站 A 及 網站 B 時，應建立兩個不同執行緒組合。  
+代表一定數量的平行使用者，它可以用來模擬平行使用者傳送請求，實際的請求內容在 Sampler 中定義，被執行緒組合所包含。
 
-* **HTTP 要求 ( Sampler\HTTP Request ):**  
-HTTP 要求的原理是通過建立多條 HTTP 要求，從而達到測試網站負載及效能的作用，最常見的即是 HTTP 要求這類，其他還有資料庫測試、FTP 測試等。
+* **監聽器 ( Listener ):**   
+監聽器負責收集測試結果，同時也被告知結果顯示的方式。
+
+* **邏輯控制器 ( Logic Controller):**  
+可以自定義 JMeter 傳送請求的行為邏輯，它與 Sampler 結合使用可以模擬複雜的請求序列。
+* **斷言 ( Assertions ):**  
+可以用來判斷請求響應的結果是否如使用者所期望的。它可以用來隔離問題域，即在確保功能正確的前提下執行壓力測試。這個限制對於有效的測試是非常有用的。
+* **配置文件 ( Config Element ):**  
+維護 Sampler 需要的配置資訊，並根據實際的需要會修改請求的內容。
+* **前置處理器 ( Pre Processors )／後置處理器 (  Post Processors ):**   
+負責在生成請求之前和之後完成工作=方前置處理器常用來修改請求的設定，後置處理器則用來處理響應結果。
+* **定時器 ( Timer ):**  
+負責定義請求之間的延遲間隔。
+
 
 ### 1. 新增 Thread Group
 ![Add Thread Group](../../images/20200511-JMeterStart/Image101.png)
@@ -75,6 +90,10 @@ HTTP 要求的原理是通過建立多條 HTTP 要求，從而達到測試網站
 * [官方使用手冊][JMeterManual]
 * [Jmeter 使用指南][Ref002]
 * [JMeter multipart/form-data 請求自定義 body data 簡述][Ref003]
+* [HTTP 協議詳解][Ref005]
+* [JMeter 性能測試入門][Ref006]
+* [JMeter 錄製腳本][Ref007]
+* [Jmeter 教程 簡單的壓力測試][Ref008]
 
 [JMeter]:https://jmeter.apache.org/
 [JMeterManual]:https://jmeter.apache.org/usermanual/index.html
@@ -83,5 +102,7 @@ HTTP 要求的原理是通過建立多條 HTTP 要求，從而達到測試網站
 [Ref002]:https://www.cnblogs.com/st-leslie/p/5185376.html
 [Ref003]:https://www.itread01.com/content/1541152143.html
 [Ref004]:http://svn.apache.org/repos/asf/jmeter/tags/v2_8/docs/usermanual/component_reference.html#HTTP_Request
-
-
+[Ref005]:https://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html
+[Ref006]:https://www.cnblogs.com/TankXiao/p/4045439.html
+[Ref007]:https://www.cnblogs.com/TankXiao/p/4064289.html
+[Ref008]:https://www.cnblogs.com/TankXiao/p/4059378.html
