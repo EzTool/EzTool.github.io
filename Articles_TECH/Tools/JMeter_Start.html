@@ -124,30 +124,31 @@
 </li>
 </ul>
 <h3 id="1-新增-thread-group">1. 新增 Thread Group</h3>
-<p><img src="../../images/20200511-JMeterStart/Image101.png" alt="Add Thread Group"></p>
+<p><img src="../../images/20200511-JMeterStart/Image101.png" alt="Add Thread Group"><br>
+<strong>Test Plan</strong> 為所有項目的根節點，開啟新測試後預設會建立不用額外操作。</p>
 <ul>
-<li>設定測試數量<br>
-每次測試的數量，是透過 <strong>執行緒數量 Number of Threads(users)</strong> 及 <strong>循環數量 Loop Count</strong> 的乘數。
+<li><strong>設定測試數量</strong><br>
+每次測試的數量，是透過 <strong>執行緒數量 Number of Threads(users)</strong> 及 <strong>循環數量 Loop Count</strong> 的乘數，在 JMeter 中執行緒數量配合的 <strong>數量</strong>，與 Visual Studio 中的 Web Loading 專案中指定一段 <strong>時間</strong> 不同。
 <img src="../../images/20200511-JMeterStart/Image103.png" alt="Run Times"></li>
 </ul>
 <h3 id="2-新增-http-request">2. 新增 HTTP Request</h3>
 <p><img src="../../images/20200511-JMeterStart/Image102.png" alt="Add Thread Group"></p>
 <ul>
-<li>設定 HTTP Request
+<li>設定 HTTP Request<br>
 <img src="../../images/20200511-JMeterStart/Image104.png" alt="Add Thread Group"></li>
 </ul>
 <p>完整設定可以參考 <a href="http://svn.apache.org/repos/asf/jmeter/tags/v2_8/docs/usermanual/component_reference.html#HTTP_Request">使用手冊的 18.1.2 HTTP Request</a> 的說明，簡單說明必要的參數如下：</p>
 <ul>
-<li>Basic
+<li><strong>Basic</strong>
 <ul>
-<li>Web Server
+<li><strong>Web Server</strong>
 <ul>
 <li><strong>Proptocol[http]:</strong> 可以填入到 <strong>HTTP</strong> 及 <strong>HTTPS</strong> 兩種不同的協議。</li>
 <li><strong>Server Name or IP:</strong> 網頁的伺服器名稱或是 IP 位址。</li>
 <li><strong>Port Number:</strong> 埠號，預設 HTTP/HTTPS 的 80 埠號，可以設定自訂的不同埠號。</li>
 </ul>
 </li>
-<li>HTTP Request
+<li><strong>HTTP Request</strong>
 <ul>
 <li><strong>Method:</strong> 各個不同呼叫模式，例如 Get, Post 方法。</li>
 <li><strong>Path:</strong> 路徑，待測試的網址路徑。</li>
@@ -161,22 +162,30 @@
 </li>
 </ul>
 <h3 id="3-新增監聽器">3. 新增監聽器</h3>
-<p>執行測試後，如何收集測試結果，可以透過監聽器在執行過進行結果收集，以下列示兩種不同的監聽器，分別以樹狀結構及列表形式表示測試結果。</p>
+<p>執行測試後，可以透過監聽器在執行過進行結果收集，以下列示兩種不同的監聽器，分別以樹狀結構及列表形式表示測試結果。</p>
 <ul>
 <li>View Results Tree
 <img src="../../images/20200511-JMeterStart/Image105.png" alt="Add Thread Group"></li>
 <li>View Results in Table
 <img src="../../images/20200511-JMeterStart/Image106.png" alt="Add Thread Group"></li>
 </ul>
+<h3 id="4-執行與中斷">4. 執行與中斷</h3>
+<p>點擊綠色箭頭就會執行此 <strong>測試計畫</strong> 。<br>
+<img src="../../images/20200511-JMeterStart/Image107.png" alt="Run Test"></p>
+<p>執行過程可以點撃 <strong>STOP</strong> 按鍵中斷執行。<br>
+<img src="../../images/20200511-JMeterStart/Image108.png" alt="Run Test"></p>
+<p>清除測試結果則是利用 <strong>掃帚</strong> 按鍵。<br>
+<img src="../../images/20200511-JMeterStart/Image109.png" alt="Run Test"></p>
 <h2 id="參考文件">參考文件</h2>
 <ul>
 <li><a href="https://jmeter.apache.org/usermanual/index.html">官方使用手冊</a></li>
-<li><a href="https://www.cnblogs.com/st-leslie/p/5185376.html">Jmeter 使用指南</a></li>
+<li><a href="https://www.cnblogs.com/st-leslie/p/5185376.html">JMeter 使用指南</a></li>
 <li><a href="https://www.itread01.com/content/1541152143.html">JMeter multipart/form-data 請求自定義 body data 簡述</a></li>
 <li><a href="https://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html">HTTP 協議詳解</a></li>
 <li><a href="https://www.cnblogs.com/TankXiao/p/4045439.html">JMeter 性能測試入門</a></li>
 <li><a href="https://www.cnblogs.com/TankXiao/p/4064289.html">JMeter 錄製腳本</a></li>
 <li><a href="https://www.cnblogs.com/TankXiao/p/4059378.html">Jmeter 教程 簡單的壓力測試</a></li>
+<li><a href="http://cloudchen.logdown.com/posts/247932/apache-jmeter-tool-for-load-test-and-measure-performance">Apache JMeter™ : 負載測試與效能測量的好工具</a></li>
 </ul>
 </article>
           </div>

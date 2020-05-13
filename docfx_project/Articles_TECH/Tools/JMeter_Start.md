@@ -54,46 +54,60 @@ JMeter 的安裝非常簡單，從[JMeter 官方網站][JMeter] 下載壓縮檔�
 
 
 ### 1. 新增 Thread Group
-![Add Thread Group](../../images/20200511-JMeterStart/Image101.png)
-* 設定測試數量  
-每次測試的數量，是透過 **執行緒數量 Number of Threads(users)** 及 **循環數量 Loop Count** 的乘數。
+![Add Thread Group](../../images/20200511-JMeterStart/Image101.png)  
+**Test Plan** 為所有項目的根節點，開啟新測試後預設會建立不用額外操作。 
+
+* **設定測試數量**  
+每次測試的數量，是透過 **執行緒數量 Number of Threads(users)** 及 **循環數量 Loop Count** 的乘數，在 JMeter 中執行緒數量配合的 **數量**，與 Visual Studio 中的 Web Loading 專案中指定一段 **時間** 不同。
 ![Run Times](../../images/20200511-JMeterStart/Image103.png)  
 
 ### 2. 新增 HTTP Request
 ![Add Thread Group](../../images/20200511-JMeterStart/Image102.png)
 
-* 設定 HTTP Request 
+* 設定 HTTP Request  
 ![Add Thread Group](../../images/20200511-JMeterStart/Image104.png)
 
 完整設定可以參考 [使用手冊的 18.1.2 HTTP Request][Ref004] 的說明，簡單說明必要的參數如下：  
-* Basic    
-    * Web Server
+* **Basic**    
+    * **Web Server**  
         * **Proptocol[http]:** 可以填入到 **HTTP** 及 **HTTPS** 兩種不同的協議。
         * **Server Name or IP:** 網頁的伺服器名稱或是 IP 位址。
         * **Port Number:** 埠號，預設 HTTP/HTTPS 的 80 埠號，可以設定自訂的不同埠號。
-    * HTTP Request
+    * **HTTP Request**  
         * **Method:** 各個不同呼叫模式，例如 Get, Post 方法。
         * **Path:** 路徑，待測試的網址路徑。
         * **Redirect Automatically:** 勾選後，在網頁轉址時，將轉址與原請求視窗同一請求。
         * **Follow Redirects:** 勾選後，在網頁轉址時，將轉址視為個別不同請求。
         * **Use KeepAlive:** 設定 HTTP 呼叫的 Keep-Alive 設定。
     * **Parameters:** 提供設定網頁後綴參數。
-### 3. 新增監聽器
-執行測試後，如何收集測試結果，可以透過監聽器在執行過進行結果收集，以下列示兩種不同的監聽器，分別以樹狀結構及列表形式表示測試結果。
+
+### 3. 新增監聽器  
+執行測試後，可以透過監聽器在執行過進行結果收集，以下列示兩種不同的監聽器，分別以樹狀結構及列表形式表示測試結果。
 * View Results Tree
 ![Add Thread Group](../../images/20200511-JMeterStart/Image105.png)
 * View Results in Table
 ![Add Thread Group](../../images/20200511-JMeterStart/Image106.png)
 
+### 4. 執行與中斷
+點擊綠色箭頭就會執行此 **測試計畫** 。  
+![Run Test](../../images/20200511-JMeterStart/Image107.png)
 
-## 參考文件
+執行過程可以點撃 **STOP** 按鍵中斷執行。  
+![Run Test](../../images/20200511-JMeterStart/Image108.png)
+
+清除測試結果則是利用 **掃帚** 按鍵。  
+![Run Test](../../images/20200511-JMeterStart/Image109.png)
+
+
+## 參考文件  
 * [官方使用手冊][JMeterManual]
-* [Jmeter 使用指南][Ref002]
+* [JMeter 使用指南][Ref002]
 * [JMeter multipart/form-data 請求自定義 body data 簡述][Ref003]
 * [HTTP 協議詳解][Ref005]
 * [JMeter 性能測試入門][Ref006]
 * [JMeter 錄製腳本][Ref007]
 * [Jmeter 教程 簡單的壓力測試][Ref008]
+* [Apache JMeter™ : 負載測試與效能測量的好工具][Ref009]
 
 [JMeter]:https://jmeter.apache.org/
 [JMeterManual]:https://jmeter.apache.org/usermanual/index.html
@@ -106,3 +120,4 @@ JMeter 的安裝非常簡單，從[JMeter 官方網站][JMeter] 下載壓縮檔�
 [Ref006]:https://www.cnblogs.com/TankXiao/p/4045439.html
 [Ref007]:https://www.cnblogs.com/TankXiao/p/4064289.html
 [Ref008]:https://www.cnblogs.com/TankXiao/p/4059378.html
+[Ref009]:http://cloudchen.logdown.com/posts/247932/apache-jmeter-tool-for-load-test-and-measure-performance

@@ -5,6 +5,42 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "Articles_ACCOUNT/Intermediate/002_00_Cash.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_ACCOUNT/Intermediate/002_00_Cash.html",
+          "hash": "iuDOwnqKHSqUaiEkd5sbyw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_ACCOUNT/Intermediate/003_00_Inventory.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_ACCOUNT/Intermediate/003_00_Inventory.html",
+          "hash": "LQpv7gvpO8R4or8LqyOomA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Articles_ACCOUNT/Intermediate/林蕙真.md",
+      "output": {
+        ".html": {
+          "relative_path": "Articles_ACCOUNT/Intermediate/林蕙真.html",
+          "hash": "UH3O8Hy15/7ijFozSyoFAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Articles_ACCOUNT/index.md",
       "output": {
         ".html": {
@@ -105,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "Articles_TECH/Tools/JMeter_Start.html",
-          "hash": "tPxV84Osb6hnENRar7r2Xw=="
+          "hash": "37SeP8FD8HZl9ncQwKOLeg=="
         }
       },
       "is_incremental": false,
@@ -317,6 +353,149 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image107.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image107.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image108.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image108.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20200511-JMeterStart/Image109.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20200511-JMeterStart/Image109.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/CreatePipelines001.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/CreatePipelines001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/CreatePipelines002.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/CreatePipelines002.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image001.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image002.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image002.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image003.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image003.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image004.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image004.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image005.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image005.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image006.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image006.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image007.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image007.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EzTool.ORM/Image008.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/EzTool.ORM/Image008.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -356,8 +535,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 15,
-          "skipped_file_count": 14
+          "total_file_count": 18,
+          "skipped_file_count": 17
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
