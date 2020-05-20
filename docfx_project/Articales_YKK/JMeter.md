@@ -1,5 +1,7 @@
 # Jemeter
 
+[YouTube:【DevOps 線 11】透過 Azure DevOps 執行 JMeter Load Test](https://www.youtube.com/watch?v=wQWog1Pm74A)
+
 ## 工具
 * [非常詳細的Fiddler工具使用說明（包含APP抓包）](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/32041/)
 * [Web Testing with JMeter: How To Properly Handle Embedded Resources in HTML Responses](https://www.blazemeter.com/blog/web-testing-jmeter-how-properly-handle-embedded-resources-html-responses)

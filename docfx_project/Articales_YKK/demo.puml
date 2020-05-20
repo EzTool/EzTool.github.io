@@ -1,0 +1,10 @@
+@startuml
+title
+pos:登入
+| col1 | col2 |
+| row1 | row2 |
+end title
+
+Bob->Alice : hello
+@enduml
+
