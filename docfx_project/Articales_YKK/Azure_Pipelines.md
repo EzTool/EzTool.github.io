@@ -115,6 +115,10 @@ steps:
 * [使用 Azure Pipelines 和 Compute Engine 创建 CI/CD 流水线][Ref006]
 * [裝載您自己的 NuGet 摘要][Ref007]
 * [使用 nuget.exe CLI 建立套件][Ref008]
+* [How to overcome your TFS hangover and start a new life with Git][Ref009]
+
+
+
 
 [pic001]:https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
 [MSDN:Pipeline]:https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops
@@ -127,3 +131,4 @@ steps:
 [Ref006]:https://cloud.google.com/solutions/creating-cicd-pipeline-vsts-compute-engine?hl=zh-cn
 [Ref007]:https://docs.microsoft.com/zh-tw/nuget/hosting-packages/overview
 [Ref008]:https://docs.microsoft.com/zh-tw/nuget/create-packages/creating-a-package
+[Ref009]:https://medium.com/@SubhankarS/https-medium-com-subhankars-how-to-overcome-your-tfs-hangover-c7934a50b52b
